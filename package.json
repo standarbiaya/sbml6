@@ -1,0 +1,15 @@
+{
+  "name": "dashboard-sbml",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/verify.mjs",
+    "predeploy": "node scripts/verify.mjs",
+    "deploy": "wrangler deploy --config ./wrangler.jsonc",
+    "dev": "wrangler dev --config ./wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "^4.149.0"
+  }
+}
